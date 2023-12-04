@@ -25,9 +25,9 @@ public class RefreshToken {
     public RefreshToken(Long userId, String refreshToken) {
             this.userId = userId;
             this.refreshToken = refreshToken;
-        }
+    }
 
-        public RefreshToken update(String newRefreshToken) {
+    public RefreshToken update(String newRefreshToken) {
         this.refreshToken = newRefreshToken;
         /*  this : 리턴 값을 가지고 다른 행위를 더 수행하기 위해 자기 자신의 참조값을 리턴시킴
             player.setName().getName() 이렇게 사용이 가능함
