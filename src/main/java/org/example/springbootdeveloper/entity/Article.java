@@ -1,11 +1,10 @@
-package org.example.springbootdeveloper.domain;
+package org.example.springbootdeveloper.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.core.SpringVersion;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 

@@ -2,7 +2,7 @@ package org.example.springbootdeveloper.service;
 
 import lombok.RequiredArgsConstructor;
 import org.example.springbootdeveloper.config.jwt.TokenProvider;
-import org.example.springbootdeveloper.domain.User;
+import org.example.springbootdeveloper.entity.User;
 import org.springframework.stereotype.Service;
 
 import java.time.Duration;

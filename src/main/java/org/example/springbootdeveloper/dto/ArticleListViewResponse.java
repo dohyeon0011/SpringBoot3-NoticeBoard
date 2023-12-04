@@ -1,7 +1,7 @@
 package org.example.springbootdeveloper.dto;
 
 import lombok.Getter;
-import org.example.springbootdeveloper.domain.Article;
+import org.example.springbootdeveloper.entity.Article;
 
 // View에게 데이터를 전달하기 위한 클래스 객체
 @Getter

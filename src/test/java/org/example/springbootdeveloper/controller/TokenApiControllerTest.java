@@ -3,8 +3,8 @@ package org.example.springbootdeveloper.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.springbootdeveloper.config.jwt.JwtFactory;
 import org.example.springbootdeveloper.config.jwt.JwtProperties;
-import org.example.springbootdeveloper.domain.RefreshToken;
-import org.example.springbootdeveloper.domain.User;
+import org.example.springbootdeveloper.entity.RefreshToken;
+import org.example.springbootdeveloper.entity.User;
 import org.example.springbootdeveloper.dto.CreateAccessTokenRequest;
 import org.example.springbootdeveloper.repository.RefreshTokenRepository;
 import org.example.springbootdeveloper.repository.UserRepository;
@@ -22,7 +22,6 @@ import org.springframework.web.context.WebApplicationContext;
 
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;

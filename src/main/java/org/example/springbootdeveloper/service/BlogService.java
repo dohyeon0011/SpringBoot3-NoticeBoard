@@ -2,7 +2,7 @@ package org.example.springbootdeveloper.service;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.example.springbootdeveloper.domain.Article;
+import org.example.springbootdeveloper.entity.Article;
 import org.example.springbootdeveloper.dto.AddArticleRequest;
 import org.example.springbootdeveloper.dto.UpdateArticleRequest;
 import org.example.springbootdeveloper.repository.BlogRepository;

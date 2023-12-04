@@ -1,6 +1,6 @@
 package org.example.springbootdeveloper.repository;
 
-import org.example.springbootdeveloper.domain.Article;
+import org.example.springbootdeveloper.entity.Article;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 // JpaRepository -> CrudRepository -> save()

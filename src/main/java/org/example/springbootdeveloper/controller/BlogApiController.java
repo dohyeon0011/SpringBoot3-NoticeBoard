@@ -1,7 +1,7 @@
 package org.example.springbootdeveloper.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.example.springbootdeveloper.domain.Article;
+import org.example.springbootdeveloper.entity.Article;
 import org.example.springbootdeveloper.dto.AddArticleRequest;
 import org.example.springbootdeveloper.dto.ArticleResponse;
 import org.example.springbootdeveloper.dto.UpdateArticleRequest;

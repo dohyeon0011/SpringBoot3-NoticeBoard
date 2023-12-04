@@ -1,7 +1,7 @@
 package org.example.springbootdeveloper.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.springbootdeveloper.domain.RefreshToken;
+import org.example.springbootdeveloper.entity.RefreshToken;
 import org.example.springbootdeveloper.repository.RefreshTokenRepository;
 import org.springframework.stereotype.Service;
 

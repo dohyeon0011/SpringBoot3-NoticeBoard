@@ -1,10 +1,9 @@
 package org.example.springbootdeveloper.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.example.springbootdeveloper.domain.Article;
+import org.example.springbootdeveloper.entity.Article;
 import org.example.springbootdeveloper.dto.ArticleListViewResponse;
 import org.example.springbootdeveloper.dto.ArticleViewResponse;
-import org.example.springbootdeveloper.repository.BlogRepository;
 import org.example.springbootdeveloper.service.BlogService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

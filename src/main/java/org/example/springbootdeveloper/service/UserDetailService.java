@@ -1,9 +1,8 @@
 package org.example.springbootdeveloper.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.springbootdeveloper.domain.User;
+import org.example.springbootdeveloper.entity.User;
 import org.example.springbootdeveloper.repository.UserRepository;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 

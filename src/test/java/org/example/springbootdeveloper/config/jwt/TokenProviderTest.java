@@ -1,7 +1,7 @@
 package org.example.springbootdeveloper.config.jwt;
 
 import io.jsonwebtoken.Jwts;
-import org.example.springbootdeveloper.domain.User;
+import org.example.springbootdeveloper.entity.User;
 import org.example.springbootdeveloper.repository.UserRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

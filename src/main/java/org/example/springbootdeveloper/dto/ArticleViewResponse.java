@@ -2,7 +2,7 @@ package org.example.springbootdeveloper.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.example.springbootdeveloper.domain.Article;
+import org.example.springbootdeveloper.entity.Article;
 
 import java.time.LocalDateTime;
 
