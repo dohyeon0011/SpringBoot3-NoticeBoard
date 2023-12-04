@@ -1,0 +1,39 @@
+server:
+  port: 9091
+
+spring:
+  jpa:
+    # 전송 쿼리 확인
+    show-sql: true  # SQL 쿼리 실행 구문을 모두 보여줌
+    properties:
+      hibernate:
+        format-sql: true  # SQL 쿼리 실행 구문을 모두 보여줌
+
+    defer-datasource-initialization: true   # 애플리케이션을 실행할 때 테이블을 생성하고
+                                            # data.sql 파일에 있는 쿼리를 실행하도록 함
+  datasource:
+    url: jdbc:h2:mem:testdb # url
+    username: sa  # 사용자 이름 설정
+
+  h2:
+    console:
+      enabled: true
+
+  # JWT 토큰을 만들기 위한 이슈 발급자와 비밀키 설정
+  jwt:
+    issuer: ajufresh@gmail.com  # 발급자(issuer)
+    secret_key: VlwEyVBsYt9V7zq57TejMnVUyzblYcfPQye08f7MGVA9XkHa  # 비밀키(secert_key)
+
+  # OAUTH 설정값 (인증값은 외부 사이트 업로드 금지)
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 919808811316-4rgdl3je5nrnjr6acgi5k3rbl8qb3o0i.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+
+
