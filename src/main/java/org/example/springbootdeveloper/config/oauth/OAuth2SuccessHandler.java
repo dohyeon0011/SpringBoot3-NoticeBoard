@@ -26,18 +26,18 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
     public static final Duration REFRESH_TOKEN_DURATION = Duration.ofDays(14);
     public static final Duration ACCESS_TOKEN_DURATION = Duration.ofDays(1);
     public static final String REDIRECT_PATH = "/articles";
-    
+
     private final TokenProvider tokenProvider;
     private final RefreshTokenRepository refreshTokenRepository;
     private final OAuth2AuthorizationRequestBasedOnCookieRepository auth2AuthorizationRequestRepository;
     private final UserService userService;
-    
+
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                                         Authentication authentication) throws IOException {
         OAuth2User oAuth2User = (OAuth2User) authentication.getPrincipal();
         User user = userService.findByEmail((String) oAuth2User.getAttributes().get("email"));
-        
+
         // 토큰 제공자를 사용해 리프레시 토큰 생성 -> DB에 유저 아이디와 함께 저장 -> 클라이언트에서 액세스 토큰이 만료되면 재발급을 요청하도록
         // addRefreshTokenToCookie() 메서드를 호출하여 쿠키에 리프레시 토큰 저장
         String refreshToken = tokenProvider.generateToken(user, REFRESH_TOKEN_DURATION);

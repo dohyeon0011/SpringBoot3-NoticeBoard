@@ -14,10 +14,11 @@ public class AddArticleRequest {
     private String content;
 
     // 빌더 패턴, toEntity() -> DTO(VO)를 엔티티로 만들어 주는 메소드
-    public Article toEntity() {
+    public Article toEntity(String author) {
         return Article.builder()
                 .title(title)
                 .content(content)
+                .author(author)
                 .build();
     }
 }

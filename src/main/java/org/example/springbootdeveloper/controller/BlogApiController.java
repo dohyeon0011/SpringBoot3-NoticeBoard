@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.List;
 
 @RequiredArgsConstructor    // final이나 @NotNull이 붙은 필드의 생성자 추가
@@ -22,8 +23,9 @@ public class BlogApiController {
     @PostMapping("/api/articles")
     // 요청 본문 값 매핑
     // @RequestBody : HTTP를 요청할 때 응답에 해당하는 값을 @RequestBody 어노테이션이 붙은 객체인 AddArticleRequest에 매핑
-    public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request) {
-        Article savedArticle = blogService.save(request);
+    // Principal : 컨트롤러 처리기 메소드에서 자동 파라미터로 주입받을 수 있는 타입 중 하나(구현체 가장 최상위 인터페이스라 사실상 ID 정보만 가져다 사용 가능)
+    public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request, Principal principal) {
+        Article savedArticle = blogService.save(request, principal.getName());
 
         // 요청한 자원이 성공적으로 생성되었으며 저장된 블로그 글 정보를 응답 객체에 담아 전송
         // 201 Created : 요청이 성공적으로 수행되었고, 새로운 리소스가 생성되었음
