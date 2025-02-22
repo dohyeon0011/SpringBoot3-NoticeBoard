@@ -1,16 +1,16 @@
-# 📝 간단한 블로그 with Spring Boot 3
+# 🗨 간단한 블로그 with Spring Boot 3
 
-Spring Boot 3을 활용한 간단한 블로그 프로젝트입니다.
-자체 회원가입 & 로그인 기능과 OAuth 2.0(JWT)을 이용한 Google 소셜 로그인 기능을 제공합니다.
+Spring Boot 3을 활용한 간단한 블로그 프로젝트입니다.<br>
+자체 회원가입 & 로그인 기능과 OAuth 2.0(JWT)을 이용한 Google 소셜 로그인 기능을 제공합니다.<br>
 블로그 글 작성, 수정, 삭제가 가능하며, 보안은 Spring Security를 활용하였습니다.  
 <br><br>
 ---
 
 
-🚀 기술 스택
+⚙  기술 스택
 
-Backend: Spring Boot 3, Spring Security, OAuth 2.0, JWT, JAVA  
-Frontend: Thymeleaf, HTML, CSS, JavaScript  
+Backend: Spring Boot 3, Spring Data Jpa, Spring Security, OAuth 2.0, JWT, JAVA  
+Frontend: Thymeleaf, HTML, CSS, JavaScript, BootStrap  
 Database: H2 DataBase  
 Development Tools: IntelliJ IDEA  
 
