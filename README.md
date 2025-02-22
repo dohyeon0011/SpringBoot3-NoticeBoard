@@ -59,3 +59,25 @@ Frontend
 <strong>서버 아키텍처</strong>
 
 ![image](https://github.com/user-attachments/assets/3900c1c5-0c5a-48cc-ad45-b574aa6444b6)
+
+<br><br>
+
+📦 SpringBoot3-NoticeBoard  
+ ┣ 📂 src  
+ ┃ ┣ 📂 main  
+ ┃ ┃ ┣ 📂 java.com.example.springbootdeveloper  
+ ┃ ┃ ┃ ┣ 📂 config    # 보안 및 설정 파일  
+ ┃ ┃ ┃ ┣ 📂 controller # 컨트롤러 계층  
+ ┃ ┃ ┃ ┣ 📂 entity    # 엔티티 및 모델  
+ ┃ ┃ ┃ ┣ 📂 dto       # 데이터 전송 객체  
+ ┃ ┃ ┃ ┣ 📂 repository # 데이터 액세스 계층  
+ ┃ ┃ ┃ ┣ 📂 service   # 비즈니스 로직  
+ ┃ ┃ ┃ ┣ 📂 util    # 쿠키 설정  
+ ┃ ┃ ┣ 📂 resources  
+ ┃ ┃ ┃ ┣ 📂 static   # 정적 리소스 (CSS, JS)  
+ ┃ ┃ ┃ ┣ 📂 templates # Thymeleaf 템플릿  
+ ┣ 📜 build.gradle  
+ ┣ 📜 README.md  
+
+ ---
+ <br>
