@@ -114,7 +114,7 @@ Frontend
 📌 3. 블로그 CRUD 기능 구현
 <ol>블로그 글을 작성(Create), 수정(Update), 삭제(Delete), 조회(Read) 하는 기능을 개발하였습니다.</ol>
 <ol>@Entity, @Repository, @Service, @Controller 등의 개념을 활용하여 Spring의 계층 구조를 직접 설계하고 적용할 수 있었습니다.</ol>
-<ol>CSR 방식인 Thymeleaf를 활용하여 동적인 웹 페이지를 렌더링하는 방식을 익히고, 데이터와 UI를 효과적으로 연결하는 방법을 배웠습니다.</ol><br>
+<ol>SSR 방식인 Thymeleaf를 활용하여 동적인 웹 페이지를 렌더링하는 방식을 익히고, 데이터와 UI를 효과적으로 연결하는 방법을 배웠습니다.</ol><br>
 
 🎯 프로젝트를 진행하며 느낀 점  
 <br>
